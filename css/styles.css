@@ -1,7 +1,10 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemF;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+:root {
+  --brand-color: #ffffff;
 }
 .logo {
   font-family: "Raleway";
@@ -12,11 +15,11 @@ body {
   color: #2196f3;
   text-decoration: none;
 }
-span {
+.black-logo {
   color: #000;
 }
 .partlogo {
-  color: #ffffff;
+  color: var(--brand-color);
 }
 .footer {
   background-color: #2f303a;
@@ -37,34 +40,33 @@ span {
   color: #212121;
   text-decoration: none;
 }
-.link:hover {
-color: #2196F3;
-}
+.link:hover,
 .link:focus {
-color: #2196F3;   
+  color: #2196f3;
 }
 .link:active {
-color: #2196F3;    
+  color: #2196f3;
 }
 
 .tel {
   color: #757575;
 }
 .street {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--brand-color);
   text-decoration: none;
+  font-style: normal;
 }
 .contact {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-style: normal;
+  color: var(--brand-color);
 }
 
 .decision {
@@ -76,7 +78,8 @@ color: #2196F3;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--brand-color);
+  text-transform: uppercase;
 }
 .button {
   background-color: #2196f3;
@@ -84,7 +87,8 @@ color: #2196F3;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--brand-color);
+  font-family: inherit;
 }
 .pre-title {
   font-weight: 700;
@@ -94,9 +98,8 @@ color: #2196F3;
   color: #212121;
 }
 .description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 16px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -123,33 +126,47 @@ color: #2196F3;
   color: #212121;
 }
 .button-filter {
-  background-color:#F5F4FA;
+  background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  font-family: Roboto, sans-serif;
 }
-.button-filter:hover {
-background: #2196F3;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-}
+.button-filter:hover,
 .button-filter:focus {
-    background: #2196F3;
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: #FFFFFF;
+  background: #2196f3;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
 }
+
 .button-filter:active {
-    background: #2196F3;
-color: #FFFFFF; 
+  background: #2196f3;
+  color: var(--brand-color);
+}
+.title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.title-description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.sub-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
